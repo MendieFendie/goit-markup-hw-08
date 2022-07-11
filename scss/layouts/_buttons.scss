@@ -1,0 +1,42 @@
+.buttons {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons-title {
+  visibility: hidden;
+}
+
+.buttons-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-item {
+  padding: 6px 22px;
+  display: inline-block;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-family: "Roboto";
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  border-color: transparent;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.buttons-button:not(:last-child) {
+  margin-right: 8px;
+}
