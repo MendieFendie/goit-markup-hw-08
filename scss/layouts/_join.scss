@@ -1,12 +1,23 @@
 .join {
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .box {
-  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .join-header {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   font-size: 14px;
   line-height: 1.14x;
   letter-spacing: 0.03em;
@@ -49,9 +60,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer > .container {
-  display: flex;
-  align-items: baseline;
 }
