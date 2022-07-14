@@ -4,6 +4,9 @@
   padding-bottom: 60px;
   & .logo {
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+    }
   }
 }
 
@@ -13,7 +16,10 @@
     flex-direction: column;
     justify-content: center;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
   @media screen and(min-width:1200px) {
     display: flex;

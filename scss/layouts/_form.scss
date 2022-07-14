@@ -1,5 +1,8 @@
 .form {
   width: 100%;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     min-width: 570px;
   }
@@ -11,7 +14,10 @@
     align-items: center;
     flex-direction: column;
   }
-  display: inline-flex;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .form-title {
@@ -23,8 +29,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--additional-text-color);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
   }
 }
 
@@ -73,6 +82,9 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-button {
@@ -91,6 +103,9 @@
   border-radius: 4px;
   background-color: var(--accent-color);
   border-color: transparent;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: auto;
+  }
 }
 
 .form-btn-text {
