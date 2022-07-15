@@ -495,25 +495,41 @@
         <button type="submit" class="modal-button">Отправить</button>
       </div>
     </div>
-    <div class="mobile">
-       <button type="button" class="mobile__button" data-modal-close>
-          <svg class="close-icon" width="40" height="40">
+    <div class="mobile" data-menu>
+      <div class="container">
+               <button type="button" class="mobile__button" aria-expanded="false" data-menu-button>
+          <svg class="close-icon" width="40" height="40" >
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link current link">Студия</a>
+        <ul class="mobile__list">
+            <li class="mobile__item list ">
+              <a href="./index.html" class="mobile__link current link">Студия</a>
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+            <li class="mobile__item list">
+              <a href="./portfolio.html" class="mobile__link link">Портфолио</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link link">Контакты</a>
+            <li class="mobile__item list">
+              <a href="" class="mobile__link link">Контакты</a>
             </li>
           </ul>
-        
+          <ul class="mobile__contacts">
+            <li class="mobile__contact list"><a class="mobile__links link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+             <li class="mobile__contact-tel list"><a class="mobile__links link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+
+          <ul class="social list">
+            <li class="social__item"><a class="social__link link" href="">Instagram</a></li>
+            <li class="line"></li>
+            <li class="social__item"><a class="social__link link" href="">Twitter</a></li>
+            <li class="line"></li>
+            <li class="social__item"><a class="social__link link" href="">Facebook</a></li>
+            <li class="line"></li>
+            <li class="social__item"><a class="social__link link" href="">LinkedIn</a></li>
+          </ul>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu_mobile.js"></script>
   </body>
 </html>

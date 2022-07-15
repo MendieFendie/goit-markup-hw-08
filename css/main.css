@@ -373,9 +373,6 @@ body {
   right: 15px;
   top: 10px;
   fill: currentColor;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__button:focus {
   fill: var(--accent-color);
@@ -1491,12 +1488,21 @@ body {
   .mobile {
     width: 100%;
     height: 100%;
-    background-color: beige;
+    background-color: #ffffff;
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
   }
+}
+.mobile .mobile__link.current {
+  color: var(--accent-color);
+}
+
+.is-open {
+  opacity: 1;
+  transform: translatex(0);
 }
 
 .mobile__button {
@@ -1505,8 +1511,105 @@ body {
   position: absolute;
   right: 15px;
   top: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile__button:focus {
-  fill: var(--accent-color);
   cursor: pointer;
+}
+
+.mobile__list {
+  padding-top: 48px;
+  padding-left: 25px;
+  margin-bottom: 320px;
+}
+
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile__contacts {
+  padding-left: 25px;
+  margin-bottom: 64px;
+}
+
+.mobile__contact, .mobile__contact-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+}
+
+.mobile__contact:first-child, .mobile__contact-tel:first-child {
+  margin-bottom: 32px;
+}
+
+.mobile__contact-tel {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.mobile__links {
+  color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__links:focus {
+  color: var(--accent-color);
+}
+
+.social {
+  display: inline-flex;
+  padding-left: 25px;
+}
+
+.social__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social__link {
+  color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link:focus {
+  color: var(--accent-color);
+}
+
+.line {
+  line-height: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }/*# sourceMappingURL=main.css.map */
