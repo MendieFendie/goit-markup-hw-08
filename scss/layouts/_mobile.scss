@@ -3,11 +3,19 @@
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
+    -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   & .mobile__link.current {
     color: var(--accent-color);
@@ -17,6 +25,16 @@
 .is-open {
   opacity: 1;
   transform: translatex(0);
+  z-index: 1;
+  opacity: 1;
+}
+
+.mobile > .container {
+  @media screen and (max-width: 767px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .mobile__button {
@@ -36,7 +54,6 @@
 .mobile__list {
   padding-top: 48px;
   padding-left: 25px;
-  margin-bottom: 320px;
 }
 
 .mobile__item:not(:last-child) {
@@ -60,6 +77,7 @@
 .mobile__contacts {
   padding-left: 25px;
   margin-bottom: 64px;
+  margin-top: auto;
 }
 .mobile__contact {
   font-family: "Roboto";
@@ -91,6 +109,7 @@
 .social {
   display: inline-flex;
   padding-left: 25px;
+  padding-bottom: 48px;
 }
 
 .social__item {
