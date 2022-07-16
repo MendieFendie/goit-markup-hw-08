@@ -279,11 +279,11 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-  position: relative;
 }
 .header .container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav {
