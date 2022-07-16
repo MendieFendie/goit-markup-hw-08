@@ -376,14 +376,18 @@ body {
     fill: currentColor;
   }
   .header__button:focus {
-    fill: var(--accent-color);
     cursor: pointer;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 768px) {
   .header__button {
     display: none;
   }
+}
+
+.header__button.is-open .header__button-open {
+  display: none;
 }
 
 .contacts__svg:focus {
@@ -1490,6 +1494,9 @@ body {
   color: var(--text-color);
 }
 
+.mobile {
+  z-index: -2;
+}
 @media screen and (max-width: 767px) {
   .mobile {
     width: 100%;
@@ -1512,8 +1519,8 @@ body {
 .is-open {
   opacity: 1;
   transform: translatex(0);
-  z-index: 1;
   opacity: 1;
+  z-index: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1536,6 +1543,11 @@ body {
 }
 .mobile__button:focus {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .mobile__button {
+    display: none;
+  }
 }
 
 .mobile__list {

@@ -23,9 +23,9 @@
         <a href="/" class="logo link"
           >Web<span class="logo__text">Studio</span></a
         >
-         <button type="button" class="header__button">
+         <button type="button" class="header__button" aria-expanded="false" data-menu-button>
           <svg class="contacts__svg" width="40" height="40">
-            <use href="./images/icons.svg#menu_40px"></use>
+            <use class="header__button-open" href="./images/icons.svg#menu_40px"></use>
           </svg>
         </button>
         <nav class="nav header__nav">
@@ -498,7 +498,7 @@
     <div class="mobile" data-menu>
       <button type="button" class="mobile__button" aria-expanded="false" data-menu-button>
           <svg class="close-icon" width="40" height="40" >
-            <use href="./images/icons.svg#icon-close"></use>
+             <use class="header__button-close" href="./images/icons.svg#close_40px"></use>
           </svg>
         </button>
       <div class="container">
