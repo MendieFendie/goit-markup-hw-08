@@ -1,7 +1,9 @@
 .form {
   width: 100%;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
     min-width: 570px;
@@ -40,6 +42,9 @@
 .form-input {
   @media screen and (max-width: 767px) {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 450px;
   }
   margin-right: 12px;
   box-sizing: border-box;
