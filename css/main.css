@@ -1148,7 +1148,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .join {
-    margin-right: 93px;
+    width: calc(25% - 22.5px);
+    margin-right: 30px;
   }
 }
 
@@ -1168,7 +1169,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .box {
-    margin-right: 70px;
+    width: calc(25% - 22.5px);
+    margin-right: 30px;
   }
 }
 
@@ -1198,7 +1200,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 2199px) {
   .join-list {
-    justify-content: center;
+    justify-content: start;
   }
 }
 
@@ -1477,7 +1479,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .form {
-    min-width: 570px;
+    width: calc(50% - 15px);
+    margin-right: 0;
   }
 }
 
@@ -1659,6 +1662,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+}
+@media screen and (max-width: 480px) {
+  .exemple-list {
+    margin: 0;
+  }
 }
 
 .exemple-item {

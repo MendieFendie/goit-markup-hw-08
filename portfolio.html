@@ -15,45 +15,75 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     /> -->
     <title>Портфолио</title>
-       <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <nav class="container">
-        <a class="logo link" href="./index.html">Web<span class="logo--header">Studio</span></a>
-        <button class="btn-burger" type="button" aria-expanded="false" data-menu-button>
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo--header">Studio</span></a
+        >
+        <button
+          class="btn-burger"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
           <svg class="contacts__svg" width="40" height="40">
-            <use class="btn-burger__icon-burger" href="./images/icons.svg#menu_40px"></use>
-            <use class="btn-burger__icon-cross" href="./images/icons.svg#close_40px"></use>
+            <use
+              class="btn-burger__icon-burger"
+              href="./images/icons.svg#menu_40px"
+            ></use>
+            <use
+              class="btn-burger__icon-cross"
+              href="./images/icons.svg#close_40px"
+            ></use>
+          </svg>
         </button>
         <div class="header__menu-container" data-menu>
-          <ul class="nav ">
-            <li class="nav__item"><a class="nav__link  link" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link active  link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link link" href="/">Контакты</a></li>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link active link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="/">Контакты</a>
+            </li>
           </ul>
           <ul class="header__contacts">
             <li class="header__contacts-item">
               <a class="header__contacts-link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="header__contacts-icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+                <svg width="16" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
             <li class="header__contacts-item">
-               <a class="header__contacts-link" href="tel:+380961111111">
-              <svg width="10" height="12" class="header__contacts-icon">
-                <use href="./images/icons.svg#icon-telephone"></use></svg
-              >+38 096 111 11 11</a
-            >
+              <a class="header__contacts-link" href="tel:+380961111111">
+                <svg width="10" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-telephone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
           <ul class="header__social-menu">
-            <li class="social__item"><a class="social__link link" href="">Instagram</a></li>
-            <li class="social__item"><a class="social__link link" href="">Twitter</a></li>
-            <li class="social__item"><a class="social__link link" href="">Facebook</a></li>
-            <li class="social__item"><a class="social__link link" href="">LinkedIn</a></li>
+            <li class="social__item">
+              <a class="social__link link" href="">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -85,7 +115,28 @@
           <ul class="exemple-list list">
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="Веб-сайт" src="./images/web-1.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/web-1.jpg 1x, ./images/web-1-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/web-1-tab.jpg    1x,
+                      ./images/web-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/web-1-mob.jpg    1x,
+                      ./images/web-1-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="Веб-сайт" src="./images/web-1.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -100,7 +151,23 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="Постер" src="./images/poster.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/poster-tab.jpg    1x,
+                      ./images/poster-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source srcset="./images/poster-mob.jpg 1x,
+                  ./images/poster-mob-2x.jpg 2x" " media="(min-width:320px)" />
+                  <img alt="Постер" src="./images/poster.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -115,8 +182,32 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="емблема ресторана" src="./images/restoraunt.jpg"
-                width=370">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/restoraunt.jpg    1x,
+                      ./images/restoraunt-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/restoraunt-tab.jpg    1x,
+                      ./images/restoraunt-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/restoraunt-mob.jpg    1x,
+                      ./images/restoraunt-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="емблема ресторана" src="./images/restoraunt.jpg"
+                  width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -131,7 +222,31 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="Навушники" src="./images/headphones.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/headphones.jpg    1x,
+                      ./images/headphones-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/headphones-tab.jpg    1x,
+                      ./images/headphones-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/headphones-mob.jpg    1x,
+                      ./images/headphones-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="Навушники" src="./images/headphones.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -146,7 +261,28 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="коробки" src="./images/project.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/project.jpg 1x, ./images/project-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-tab.jpg    1x,
+                      ./images/project-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/project-mob.jpg    1x,
+                      ./images/project-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="коробки" src="./images/project.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -161,7 +297,31 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="Веб-сайт" src="./images/inspiration.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/inspiration.jpg    1x,
+                      ./images/inspiration-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/inspiration-tab.jpg    1x,
+                      ./images/inspiration-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/inspiration-mob.jpg    1x,
+                      ./images/inspiration-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="Веб-сайт" src="./images/inspiration.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -176,7 +336,27 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="журнал" src="./images/magazyn.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/magazyn.jpg 1x, ./images/magazyn-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/magazyn-tab.jpg    1x,
+                      ./images/magazyn-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/magazyn-mob.jpg    1x,
+                      ./images/magazyn-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="журнал" src="./images/magazyn.jpg" width=370">
+                </picture>
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -191,7 +371,28 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="етикетка" src="./images/label.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/label.jpg 1x, ./images/label-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/label-tab.jpg    1x,
+                      ./images/label-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/label-mob.jpg    1x,
+                      ./images/label-2x-mob.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="етикетка" src="./images/label.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -206,7 +407,28 @@
             </li>
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="ноутбук" src="./images/laptop.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/laptop.jpg 1x, ./images/laptop-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/laptop-tab.jpg    1x,
+                      ./images/laptop-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/laptop-mob.jpg    1x,
+                      ./images/laptop-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="ноутбук" src="./images/laptop.jpg" width=370">
+                </picture>
+
                 <p class="exemple-top-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -224,7 +446,7 @@
       </section>
     </main>
 
-     <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="box">
           <a href="/" class="logo link"
@@ -291,12 +513,18 @@
           <p class="form-title">Подпишитесь на рассылку</p>
           <div class="form-field">
             <label class="form-label">
-              <input class="form-input" type="email" name="email" placeholder="E-mail" />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="form-button" type="submit">
               <p class="form-btn-text">Подписаться</p>
-               <svg class="form-ico" width="20" height="20">
-                  <use href="./images/icons.svg#icon-send"></use>
+              <svg class="form-ico" width="20" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>

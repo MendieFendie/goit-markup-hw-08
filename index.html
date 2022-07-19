@@ -18,85 +18,70 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container">
-        <a href="/" class="logo link"
-          >Web<span class="logo__text">Studio</span></a
-        >
-         <button type="button" class="header__button" aria-expanded="false" data-menu-button>
-          <svg class="contacts__svg" width="40" height="40">
-            <use class="header__button-open" href="./images/icons.svg#menu_40px"></use>
-          </svg>
-        </button>
-        <nav class="nav header__nav">
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link current link">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts header__contacts list">
-          <li>
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="contacts__icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__tel">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg width="10" height="12" class="contacts__icon">
-                <use href="./images/icons.svg#icon-telephone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header> -->
-
     <header class="header">
       <nav class="container">
-        <a class="logo link" href="./index.html">Web<span class="logo--header">Studio</span></a>
-        <button class="btn-burger" type="button" aria-expanded="false" data-menu-button>
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo--header">Studio</span></a
+        >
+        <button
+          class="btn-burger"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
           <svg class="contacts__svg" width="40" height="40">
-            <use class="btn-burger__icon-burger" href="./images/icons.svg#menu_40px"></use>
-            <use class="btn-burger__icon-cross" href="./images/icons.svg#close_40px"></use>
+            <use
+              class="btn-burger__icon-burger"
+              href="./images/icons.svg#menu_40px"
+            ></use>
+            <use
+              class="btn-burger__icon-cross"
+              href="./images/icons.svg#close_40px"
+            ></use>
+          </svg>
         </button>
         <div class="header__menu-container" data-menu>
-          <ul class="nav ">
-            <li class="nav__item"><a class="nav__link active link" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link  link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link link" href="/">Контакты</a></li>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link active link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="/">Контакты</a>
+            </li>
           </ul>
           <ul class="header__contacts">
             <li class="header__contacts-item">
               <a class="header__contacts-link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="header__contacts-icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+                <svg width="16" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
             <li class="header__contacts-item">
-               <a class="header__contacts-link" href="tel:+380961111111">
-              <svg width="10" height="12" class="header__contacts-icon">
-                <use href="./images/icons.svg#icon-telephone"></use></svg
-              >+38 096 111 11 11</a
-            >
+              <a class="header__contacts-link" href="tel:+380961111111">
+                <svg width="10" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-telephone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
           <ul class="header__social-menu">
-            <li class="social__item"><a class="social__link link" href="">Instagram</a></li>
-            <li class="social__item"><a class="social__link link" href="">Twitter</a></li>
-            <li class="social__item"><a class="social__link link" href="">Facebook</a></li>
-            <li class="social__item"><a class="social__link link" href="">LinkedIn</a></li>
+            <li class="social__item">
+              <a class="social__link link" href="">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -172,29 +157,41 @@
           <h2 class="about__title">Чем мы занимаемся</h2>
           <ul class="about-list list">
             <li class="about-list__item">
-              <img
-              srcset="./images/img.jpg 1x,
-               ./images/img-2x.jpg 2x" 
-              src="./images/img.jpg" alt="верстка" width="370" />
+              <picture>
+                <source
+                  srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/img.jpg" alt="верстка" width="370" />
+              </picture>
               <p class="about-list__name">Десктопные приложения</p>
             </li>
 
             <li class="about-list__item">
-              <img
-              srcset="./images/img-2.jpg 1x,
-               ./images/img-2-2x.jpg 2x" 
-               src="./images/img-2.jpg" alt="дизайн" width="370" />
+              <picture>
+                <source
+                  srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/img-2.jpg" alt="верстка" width="370" />
+              </picture>
+              <img />
               <p class="about-list__name">Мобильные приложения</p>
             </li>
 
             <li class="about-list__item">
-              <img
-              srcset="./images/img-3.jpg 1x,
-               ./images/img-3-2x.jpg 2x" 
-                 src="./images/img-3.jpg"
-                alt="внешнее оформление"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/img-3.jpg"
+                  alt="внешнее оформление"
+                  width="370"
+                />
+              </picture>
+              <img />
               <p class="about-list__name">Дизайнерские решения</p>
             </li>
           </ul>
@@ -205,11 +202,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./images/img-4.jpg"
-                alt="Дизайнер продукта"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-4-tab.jpg    1x,
+                    ./images/img-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-4-mob.jpg    1x,
+                    ./images/img-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/img-4.jpg"
+                  alt="Дизайнер продукта"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__position">Product Designer</p>
@@ -246,11 +264,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img-5.jpg"
-                alt="Фронтенд разработчик"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-5-tab.jpg    1x,
+                    ./images/img-5-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-5-mob.jpg    1x,
+                    ./images/img-5-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/img-5.jpg"
+                  alt="Фронтенд разработчик"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__position">Frontend Developer</p>
@@ -287,7 +326,28 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-6.jpg" alt="Маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-6-tab.jpg    1x,
+                    ./images/img-6-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-6-mob.jpg    1x,
+                    ./images/img-6-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img-6.jpg" alt="Маркетолог" width="270" />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__position">Marketing</p>
@@ -324,11 +384,32 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/img-7.jpg"
-                alt="Дизайнер пользовательского интерфейса"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-7-tab.jpg    1x,
+                    ./images/img-7-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-7-mob.jpg    1x,
+                    ./images/img-7-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/img-7.jpg"
+                  alt="Дизайнер пользовательского интерфейса"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__position">UI Designer</p>
@@ -486,12 +567,18 @@
           <p class="form-title">Подпишитесь на рассылку</p>
           <div class="form-field">
             <label class="form-label">
-              <input class="form-input" type="email" name="email" placeholder="E-mail" />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="form-button" type="submit">
               <p class="form-btn-text">Подписаться</p>
-               <svg class="form-ico" width="20" height="20">
-                  <use href="./images/icons.svg#icon-send"></use>
+              <svg class="form-ico" width="20" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>
@@ -508,37 +595,74 @@
         <div class="modal-wrapper">
           <label for="user-name" class="modal-label">Имя</label>
           <div class="icon-wrapper">
-          <input type="text" id="user-name" name="user-name" class="modal-input" required>
-          <svg class="modal-icon" width="18" height="18"><use href="./images/icons.svg#icon-person">
-          </use></svg></div>
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              class="modal-input"
+              required
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
         </div>
         <div class="modal-wrapper">
           <label for="user-tel" class="modal-label">Телефон</label>
           <div class="icon-wrapper">
-          <input type="tel" id="user-tel" name="user-tel" class="modal-input" required>
-          <svg class="modal-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone">
-          </use></svg></div>
+            <input
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              class="modal-input"
+              required
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
         </div>
         <div class="modal-wrapper">
           <label for="user-mail" class="modal-label">Почта</label>
           <div class="icon-wrapper">
-          <input type="email" id="user-mail" name="user-mail" class="modal-input" required>
-          <svg class="modal-icon" width="18" height="18"><use href="./images/icons.svg#icon-email">
-          </use></svg></div>
+            <input
+              type="email"
+              id="user-mail"
+              name="user-mail"
+              class="modal-input"
+              required
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
         </div>
         <div class="modal-wrapper textarea-wrapper">
           <label for="user-comment" class="modal-label">Комментарий</label>
-          <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Введите текст"></textarea>
+          <textarea
+            name="comment"
+            id="user-comment"
+            class="modal-textarea"
+            placeholder="Введите текст"
+          ></textarea>
         </div>
         <div class="checkbox-wrapper">
-          <input type="checkbox" id="privacy" name="privacy" class="modal-checkbox visually-hidden">
+          <input
+            type="checkbox"
+            id="privacy"
+            name="privacy"
+            class="modal-checkbox visually-hidden"
+          />
           <label for="privacy" class="privacy-text">
-            <span class="checked-wrapper"><svg 
-              class="checkbox-icon" 
-              width="16" 
-              height="15"><use href="./images/icons.svg#icon-check"></use></svg
-              ></span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" 
-              class="modal-link">Условия договора</a></label>
+            <span class="checked-wrapper"
+              ><svg class="checkbox-icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use></svg></span
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              href=""
+              class="modal-link"
+              >Условия договора</a
+            ></label
+          >
         </div>
         <button type="submit" class="modal-button">Отправить</button>
       </div>
