@@ -1,6 +1,11 @@
 .buttons {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .buttons-title {
@@ -11,9 +16,13 @@
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 8px 15px;
+  gap: 15px 8px;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     justify-content: center;
   }
@@ -44,5 +53,5 @@
 }
 
 .buttons-button:not(:last-child) {
-  margin-right: 8px;
+  // margin-right: 8px;
 }
