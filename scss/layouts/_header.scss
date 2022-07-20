@@ -210,6 +210,13 @@
     margin-bottom: 32px;
   }
 }
+
+.header__contacts-item {
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
+}
+
 .header__contacts-link {
   display: flex;
   align-items: center;

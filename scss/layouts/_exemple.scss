@@ -5,9 +5,9 @@
 .exemple-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  @media screen and (max-width: 480px) {
-    margin: 0;
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
   }
 }
 
@@ -39,7 +39,7 @@
 
 .exemple-item:not(:last-child) {
   @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
