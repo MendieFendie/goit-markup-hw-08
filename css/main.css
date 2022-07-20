@@ -328,6 +328,10 @@ body {
   }
 }
 
+.header__menu-container.is-open {
+  overflow: hidden;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -502,6 +506,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header__contacts-item + .header__contacts-item {
+    margin-bottom: 32px;
+  }
+}
+
 .header__contacts-link {
   display: flex;
   align-items: center;
@@ -600,6 +610,10 @@ body {
 
 .btn-burger.is-open .btn-burger__icon-cross {
   display: block;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 .hero {
@@ -720,6 +734,7 @@ body {
   .benefits__benefits-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
