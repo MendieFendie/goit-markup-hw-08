@@ -11,6 +11,12 @@
   }
 }
 .modal {
+  padding: 40px 15px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  overflow: auto;
   @media screen and (min-width: 464px) {
     padding: 40px;
     max-width: 450px;

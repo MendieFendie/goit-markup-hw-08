@@ -1321,6 +1321,12 @@ body.active {
 }
 
 .modal {
+  padding: 40px 15px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
